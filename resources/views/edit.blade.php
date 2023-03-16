@@ -18,7 +18,7 @@
             <div class="row">
                 <div class="col-lg-3">
                     <p>Cover :</p>
-                    <img src="/cover/{{$post->cover}}" class="img-responsive" style="max-height: 100px;max-width:100px" alt="cover">
+                    <img src="/cover/{{$post->cover}}" class="img-responsive" style="max-height: 100px;max-width:100px" alt="">
                     <form action="/deletecover/{{ $post->id }}" method="post">
                         <button class="btn text-danger">X</button>
                         @csrf
@@ -40,7 +40,7 @@
                 </div>
 
                 <div class="col-lg-6">
-                    <h3 class="text-center text-danger"><b>Edit post</b></h3>
+                    <h3 class="text-center text-danger"><b>Update post</b></h3>
                     <div class="form-group">
                         <form action="/update/{{$post->id}}" method="POST" enctype="multipart/form-data">
                             @csrf
